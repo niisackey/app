@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>foodtube</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/foodtube1.css">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="shortcut icon" href="assets/images/gallary-10.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="banner">
+		<div class="bannerpic">
+			<img src="assets/images/image 1.jpg" id="bannerimg">
+		</div>
+
+		<div class="overlay">
+			<div class="navbar">
+				<div class="logo">
+					<span>FOODTUBE</span>
+				</div>
+
+			</div>
+			<div class="content">
+				<h1>Whats New</h1>
+				<h3>Click below to download new files</h3>
+
+				<a href=""><button type="button">DOWNLOAD</button></a>
+				<a href="#1"><button type="button">REVIEWS</button></a>
+			</div>
+		</div>
+	</div>
+<section class="testimonials" id="1">
+		<div class="container">
+			<h1>Testimonials</h1>
+			<p class="text-center">A Few Reviews from Customers</p>
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<div class="profile">
+						<img src="assets/images/profile 3.jpg" class="user">
+						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+						<h3>Nana Kwame<span class="textify">Head of KT Technologies</span></h3>
+					</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="profile">
+					 <img src="assets/images/profile 5.jpg" class="user">
+						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+						<h3>Mr Sackey<span class="textify">Head of KT Technologies</span></h3>
+					</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="profile">
+						<img src="assets/images/profile 1.jfif" class="user">
+						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+						<h3>Mr Okine<span class="textify">Profesional Software developer</span></h3>
+					</div>
+				</div>				
+			</div>
+
+		</div>
+		
+</section>
+
+
+<footer>
+	&copy; 2022 A Foodtube Design
+</footer>
+
+<script>
+	
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(error => {
+          console.error('Service Worker registration failed:', error);
+        });
+    });
+  }
+
+
+</script>
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
